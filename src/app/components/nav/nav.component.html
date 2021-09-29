@@ -1,0 +1,104 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+      <div class="side-nav-header">
+        <picture>
+          <source media='(min-width:0px)' srcset="assets\profile-pic.jpg">
+          <img class="profile-image" mat-card-image src="" alt="Photo of a Shiba Inu">
+        </picture>
+        <div class="icon-tray">
+          <div class="icon-box">
+            <a class="icon-button" type="button" href="https://github.com/hiteshmandav" target="_blank">
+              <fa-icon class="icon-style" [icon]="faGithub"></fa-icon>
+            </a>
+          </div>
+          <div class="icon-box">
+            <a class="icon-button" type="button" href="https://www.linkedin.com/in/hitesh-mandav/" target="_blank">
+              <fa-icon class="icon-style" [icon]="faLinkedinIn"></fa-icon>
+            </a>
+          </div>
+          <div class="icon-box">
+            <a class="icon-button" type="button" href="https://hitesh-mandav.medium.com/" target="_blank">
+              <fa-icon class="icon-style" [icon]="faMediumM"></fa-icon>
+            </a>
+          </div>
+          <div class="icon-box">
+            <a class="icon-button" type="button" (click)="testfuntion()">
+              <fa-icon class="icon-style" [icon]="faChess"></fa-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    <!--<mat-toolbar>Hitesh Mandav</mat-toolbar>-->
+    <mat-nav-list>
+      <a class="side-nav-link" mat-list-item routerLink="home">
+        <div class="icon-tray">
+          <div class="nav-link-icon">
+            <fa-icon class="icon-style" [icon]="faHome"></fa-icon>
+          </div>
+          <div class="nav-link-text">
+           Home
+          </div>
+        </div>
+      </a>
+      <a class="side-nav-link" mat-list-item routerLink="about">
+        <div class="icon-tray">
+          <div class="nav-link-icon">
+            <fa-icon class="icon-style" [icon]="faUser"></fa-icon>
+          </div>
+          <div class="nav-link-text">
+           About
+          </div>
+        </div>
+      </a>
+      <a class="side-nav-link" mat-list-item routerLink="home">
+        <div class="icon-tray">
+          <div class="nav-link-icon">
+            <fa-icon class="icon-style" [icon]="faFile"></fa-icon>
+          </div>
+          <div class="nav-link-text">
+           Resume
+          </div>
+        </div>
+      </a>
+      <a class="side-nav-link" mat-list-item routerLink="projects">
+        <div class="icon-tray">
+          <div class="nav-link-icon">
+            <fa-icon class="icon-style" [icon]="faProjectDiagram"></fa-icon>
+          </div>
+          <div class="nav-link-text">
+           Projects
+          </div>
+        </div>
+      </a>
+      <a class="side-nav-link" mat-list-item routerLink="contact">
+        <div class="icon-tray">
+          <div class="nav-link-icon">
+            <fa-icon class="icon-style" [icon]="faEnvelope"></fa-icon>
+          </div>
+          <div class="nav-link-text">
+           Contact Me
+          </div>
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" *ngIf="isHandset$ | async">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span></span>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

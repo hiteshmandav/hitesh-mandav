@@ -1,0 +1,99 @@
+.contact{
+    margin: 5%;
+
+    &-heading{
+        padding-bottom: 10px;
+        border-bottom: solid 2px #69f0ae;
+        margin-bottom: 5%;
+    }
+    &-content{
+        margin-bottom: 5%;
+    }
+    &-cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-card{
+        width: 48%;
+            
+        &-info{
+            display: flex;
+            margin: 5% !important;
+            &-icon {
+                margin-right: 10px;
+                font-size: 20px;
+                padding: 5px;
+                background-color: #7b1fa2;
+                height: 30px;
+                width: 30px;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+            }
+            &:hover{
+                color: #69f0ae;
+            }
+        }
+    }
+    &-form{
+        margin: 5% 0%;
+        &-line1{
+            display: flex;
+            justify-content: space-between;
+            // margin: 2% 0%;
+        }
+
+        &-name{
+            width: 48%;
+        }
+
+        &-email{
+            width: 48%;
+        }
+
+        &-subject{
+            width: 100%;
+        }
+
+        &-message{
+            width: 100%;
+
+            &-sending{
+                margin-top: 20%;
+            }
+        }
+        
+        &-card{
+            padding: 5%;
+        }
+
+    }
+
+    &-message{
+        &-sending{
+            margin-top: 5%;
+        }
+        &-sent{
+            margin-top: 5%;
+            border: #69f0ae solid 1px;
+            border-radius: 2%;
+            color: #69f0ae;
+            padding: 5%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .contact{
+        &-cards{
+            display: block;
+            // justify-content: space-between;
+        }
+        &-card{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
+}

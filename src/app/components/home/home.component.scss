@@ -1,0 +1,52 @@
+.typing-container {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: 32px;
+    margin: 2% 10%;
+    line-height: 48px;
+}
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 48px;
+    background-color: #69f0ae;
+    margin-left: 8px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+// Then, inside .input-cursor:
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+.sentence {
+    // text-decoration: underline;
+}
+
+.typing-name{
+    margin:  25% 10% 0 10%;
+    font-size: 64px;
+    line-height: 90px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.typewriter-display{
+    color: #7b1fa2;
+    // text-decoration: underline;
+    border-bottom:1px solid #69f0ae;
+    padding-bottom:2px;
+}
+
+.next-section{
+    float: right;
+    margin-right: 20px;
+    font-size: 48px;
+    color: #69f0ae;
+}
+
+a { color: inherit; } 
