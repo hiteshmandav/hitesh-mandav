@@ -4,11 +4,12 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {
@@ -22,7 +23,8 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent
-  }
+  },
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({

@@ -27,6 +27,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCarouselModule } from '@ngbmodule/material-carousel';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     NavComponent,
     AboutComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
