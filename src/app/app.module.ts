@@ -19,12 +19,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {MatCardModule} from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatMenuModule } from '@angular/material/menu'; 
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { MatMenuModule } from '@angular/material/menu';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    MatCarouselModule.forRoot(),
     MatSliderModule,
     LayoutModule,
     MatToolbarModule,
@@ -53,7 +56,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatProgressBarModule,
     FontAwesomeModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

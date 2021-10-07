@@ -4,27 +4,25 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
       <div class="side-nav-header">
-        <picture>
-          <source media='(min-width:0px)' srcset="assets\profile-pic.jpg">
-          <img class="profile-image" mat-card-image src="" alt="Photo of a Shiba Inu">
-        </picture>
+          <!-- <source media='(min-width:0px)' srcset="assets\legion_snap.mp4"> -->
+          <video class="profile-image" src="assets\legion_snap.mp4" alt="logo-gif"  [muted]="'muted'" autoplay loop ></video>
         <div class="icon-tray">
-          <div class="icon-box">
+          <div class="icon-box" matTooltip="Git Hub">
             <a class="icon-button" type="button" href="https://github.com/hiteshmandav" target="_blank">
               <fa-icon class="icon-style" [icon]="faGithub"></fa-icon>
             </a>
           </div>
-          <div class="icon-box">
+          <div class="icon-box" matTooltip="LinkedIn">
             <a class="icon-button" type="button" href="https://www.linkedin.com/in/hitesh-mandav/" target="_blank">
               <fa-icon class="icon-style" [icon]="faLinkedinIn"></fa-icon>
             </a>
           </div>
-          <div class="icon-box">
+          <div class="icon-box" matTooltip="Medium">
             <a class="icon-button" type="button" href="https://hitesh-mandav.medium.com/" target="_blank">
               <fa-icon class="icon-style" [icon]="faMediumM"></fa-icon>
             </a>
           </div>
-          <div class="icon-box">
+          <div class="icon-box" matTooltip="This link will take you to not Found Page">
             <a class="icon-button" type="button" (click)="testfuntion()">
               <fa-icon class="icon-style" [icon]="faChess"></fa-icon>
             </a>
@@ -53,7 +51,7 @@
           </div>
         </div>
       </a>
-      <a class="side-nav-link" mat-list-item routerLink="home">
+      <!-- <a class="side-nav-link" mat-list-item routerLink="home">
         <div class="icon-tray">
           <div class="nav-link-icon">
             <fa-icon class="icon-style" [icon]="faFile"></fa-icon>
@@ -62,7 +60,7 @@
            Resume
           </div>
         </div>
-      </a>
+      </a> -->
       <a class="side-nav-link" mat-list-item routerLink="projects">
         <div class="icon-tray">
           <div class="nav-link-icon">

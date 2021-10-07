@@ -1,0 +1,55 @@
+.about-section {
+  border: 2px solid #69f0ae;
+  // border-radius: 50px;
+  width: auto;
+  height: auto;
+  margin: 2vh 5vh;
+}
+
+
+.about-text{
+  margin: 10vh;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: justify;
+  font-variant: small-caps;
+}
+
+.tech-stack{
+  border-bottom: 1px solid #69f0ae;
+  margin: 10vh 0 3vh 0;
+}
+.logos{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icon-style-tech{
+  color: #69f0ae;
+  height: auto;
+}
+
+.text{
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-section {
+    border: 2px solid #69f0ae;
+    // border-radius: 50px;
+    width: auto;
+    height: auto;
+    margin: 1vh 1vh;
+  }
+
+  .about-text{
+    margin: 5vh;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    font-variant: small-caps;
+  }
+
+}

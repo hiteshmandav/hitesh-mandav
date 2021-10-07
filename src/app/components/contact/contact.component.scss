@@ -5,6 +5,8 @@
         padding-bottom: 10px;
         border-bottom: solid 2px #69f0ae;
         margin-bottom: 5%;
+
+  font-variant: small-caps;
     }
     &-content{
         margin-bottom: 5%;
@@ -15,7 +17,7 @@
     }
     &-card{
         width: 48%;
-            
+
         &-info{
             display: flex;
             margin: 5% !important;
@@ -63,7 +65,7 @@
                 margin-top: 20%;
             }
         }
-        
+
         &-card{
             padding: 5%;
         }

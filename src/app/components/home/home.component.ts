@@ -8,10 +8,10 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
   // typewriter: string = "";
-  private typewriter_developer: string = "Developer";
-  private typewriter_web_dev: string = "Web Developer";
-  private typewriter_freelance: string = "Freelancer";
-  private typewriter_text: string = "Developer";
+  private typewriter_developer: string = "Web Developer";
+  private typewriter_web_dev: string = "UI/UX Developer";
+  private typewriter_freelance: string = "Full-Stack Developer";
+  // private typewriter_text: string = "Developer";
   private counter = 0;
   public typewriter_display: string = "";
   public backspace:boolean;
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
           // console.log(that.typewriter_display)
           that.backspace = true;
           setTimeout(that.typingCallback, 1000, that);
-        } 
+        }
         break;
       case 1:
         var total_length = that.typewriter_web_dev.length;
@@ -86,7 +86,7 @@ export class HomeComponent implements OnInit {
           // console.log(that.typewriter_display)
           that.backspace = true;
           setTimeout(that.typingCallback, 1000, that);
-        } 
+        }
         break;
       case 2:
         var total_length = that.typewriter_freelance.length;
@@ -114,15 +114,15 @@ export class HomeComponent implements OnInit {
           // console.log(that.typewriter_display)
           that.backspace = true;
           setTimeout(that.typingCallback, 1000, that);
-        } 
+        }
         break;
       default:
         break;
     }
     // let total_length = that.typewriter_text.length;
-    
-    
+
+
   }
-  
+
 
 }

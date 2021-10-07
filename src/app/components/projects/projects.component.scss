@@ -9,6 +9,8 @@
       padding-bottom: 10px;
       border-bottom: solid 2px #69f0ae;
       margin-bottom: 5%;
+
+  font-variant: small-caps;
   }
   &-content{
       margin-bottom: 5%;
@@ -21,6 +23,11 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
+  transition-duration: 500ms;
+  transition-property: transform;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .more-button {
@@ -30,5 +37,44 @@
 }
 
 .dashboard-card-content {
-  text-align: center;
+  text-align: left;
+  margin-top: 20px;
+  overflow: auto;
+  height: 330px;
+}
+
+.dashboard-card-content--projects {
+  text-align: left;
+  margin-top: 20px;
+  overflow: auto;
+  height: 380px;
+}
+
+.dashboard-card-header {
+  border-bottom: solid 2px #69f0ae;
+
+  font-variant: small-caps;
+}
+
+.dashboard-card-content-heading {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.project-video{
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  margin: 0;
+}
+
+.project-content{
+  margin: 10px;
+}
+
+.project-list{
+  margin-bottom: 10vh;
 }
