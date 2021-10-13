@@ -93,3 +93,7 @@
       margin-bottom: 2vh;
     }
 }
+
+::ng-deep.mat-toolbar.mat-primary{
+  background : #2b3e3d
+}
