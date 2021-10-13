@@ -23,10 +23,12 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
-  transition-duration: 500ms;
-  transition-property: transform;
+  // transition-duration: 500ms;
+  // transition-property: transform;
+  background-color: #2b3e3d;
   &:hover {
     transform: scale(1.1);
+    background-color: black;
   }
 }
 

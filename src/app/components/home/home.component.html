@@ -1,5 +1,8 @@
 
-<p class="typing-name">Hitesh Mandav</p>
+<p class="typing-name" >
+  <span *ngFor="let letter of nameArray" class="animate-letter">{{letter}}</span>
+
+</p>
 <div class="typing-container">
     <span id="sentence" class="sentence">I'm a <span class="typewriter-display">{{typewriter_display }}</span></span>
     <span class="input-cursor"></span>

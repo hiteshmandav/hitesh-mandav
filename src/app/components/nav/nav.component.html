@@ -4,8 +4,11 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
       <div class="side-nav-header">
-          <!-- <source media='(min-width:0px)' srcset="assets\legion_snap.mp4"> -->
-          <video class="profile-image" src="assets\legion_snap.mp4" alt="logo-gif"  [muted]="'muted'" autoplay loop ></video>
+          <!-- <video class="profile-image" src="assets\legion_snap.mp4" alt="logo-gif"  [muted]="'muted'" autoplay loop ></video> -->
+          <picture>
+            <source media='(min-width:0px)' srcset="assets\Hitesh_Mandav.jpg">
+            <img class="profile-image"  mat-card-image src="" alt="Project photo">
+          </picture>
         <div class="icon-tray">
           <div class="icon-box" matTooltip="Git Hub">
             <a class="icon-button" type="button" href="https://github.com/hiteshmandav" target="_blank">
@@ -83,7 +86,7 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content  class="sidenav-content">
     <mat-toolbar color="primary" *ngIf="isHandset$ | async">
       <button
         type="button"

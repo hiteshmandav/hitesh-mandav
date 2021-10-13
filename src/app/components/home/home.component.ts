@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   private typewriter_developer: string = "Web Developer";
   private typewriter_web_dev: string = "UI/UX Developer";
   private typewriter_freelance: string = "Full-Stack Developer";
+  public name: string = "HITESH MANDAV";
+  public nameArray: string[];
   // private typewriter_text: string = "Developer";
   private counter = 0;
   public typewriter_display: string = "";
@@ -21,7 +23,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.nameArray = this.name.split('');
     this.typingCallback(this);
+
   }
 
   typewriter(text){

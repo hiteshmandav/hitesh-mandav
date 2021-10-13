@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'David Libre', serif; }
+body { margin: 0; font-family: 'David Libre', serif;
+  background-image: linear-gradient(to bottom right, #e8fffe, #c0ffe0);
+  color: #324b4a;}
+
 
 ::-webkit-scrollbar {
   width: 5px;               /* width of the entire scrollbar */
