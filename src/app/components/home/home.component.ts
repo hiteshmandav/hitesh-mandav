@@ -9,7 +9,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent implements OnInit {
   // typewriter: string = "";
   private typewriter_developer: string = "Web Developer";
-  private typewriter_web_dev: string = "UI/UX Developer";
+  private typewriter_web_dev: string = "Technology Lead";
   private typewriter_freelance: string = "Full-Stack Developer";
   public name: string = "HITESH MANDAV";
   public nameArray: string[];
