@@ -70,16 +70,16 @@
         </mat-card-header>
         <mat-card-content class="dashboard-card-content--projects">
           <div>
-            <video class="project-video" src="{{card.vid1}}" alt="projectvid"  [muted]="'muted'" autoplay loop controls></video>
+            <!-- <video class="project-video" src="{{card.vid1}}" alt="projectvid"  [muted]="'muted'" autoplay loop controls></video> -->
+            <picture>
+              <source media='(min-width:0px)' [srcset]="card.vid1">
+              <img class="project-image" loading="lazy" mat-card-image src="" alt="Project photo">
+            </picture>
             <div class="project-content">
               <div>{{card.content}}</div>
               <div class="dashboard-card-content-heading">Technology</div>
               <div>{{card.tech}}</div>
             </div>
-            <!-- <picture>
-              <source media='(min-width:0px)' [srcset]="card.src">
-              <img class="project-image" mat-card-image src="" alt="Project photo">
-            </picture> -->
           </div>
           <div>
           </div>
