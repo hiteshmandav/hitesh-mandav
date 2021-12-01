@@ -13,6 +13,15 @@ export class ProjectsComponent {
     map(({ matches }) => {
       if (matches) {
         return [
+
+        { title: 'Charts dashboard',
+        cols: 2, rows: 1 ,
+        vid1: `/assets/Chart-dashboard.mp4`,
+        content: `As a part hackerearth cooltrack challange, I developed a wireframe for a fictional chart dashboard.`,
+        tech : `React, Redux`,
+        applink:'https://charts-dashboard.herokuapp.com/',
+        gitlink:'https://github.com/hiteshmandav/charts-dashboard',
+      },
           { title: 'Tours and Travels Site Wireframe',
           cols: 2, rows: 1 ,
           vid1: `/assets/Tours&travels.mp4`,
@@ -66,6 +75,14 @@ export class ProjectsComponent {
       }
 
       return [
+        { title: 'Charts dashboard',
+        cols: 1, rows: 1 ,
+        vid1: `/assets/Chart-dashboard.mp4`,
+        content: `As a part hackerearth cooltrack challange, I developed a wireframe for a fictional chart dashboard.`,
+        tech : `React, Redux`,
+        applink:'https://charts-dashboard.herokuapp.com/',
+        gitlink:'https://github.com/hiteshmandav/charts-dashboard',
+      },
         { title: 'Tours and Travels Site Wireframe',
         cols: 1, rows: 1 ,
         vid1: `/assets/Tours&travels.mp4`,
