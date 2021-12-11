@@ -52,7 +52,7 @@
   </mat-carousel> -->
 
   <h1 class="project-heading">Personal Projects</h1>
-  <mat-grid-list cols="2" rowHeight="500px">
+  <mat-grid-list class="project-list" cols="2" rowHeight="500px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
         <mat-card-header class="dashboard-card-header">
@@ -80,6 +80,29 @@
               <div class="dashboard-card-content-heading">Technology</div>
               <div>{{card.tech}}</div>
             </div>
+          </div>
+          <div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <h1 class="project-heading">Certificates and Internships</h1>
+  <mat-grid-list class="project-list"cols="3" rowHeight="500px">
+    <mat-grid-tile *ngFor="let cert of certs | async" [colspan]="cert.cols" [rowspan]="cert.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header class="dashboard-card-header">
+          <mat-card-title>
+            {{cert.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content--projects">
+          <div>
+            <!-- <video class="project-video" src="{{card.vid1}}" alt="projectvid"  [muted]="'muted'" autoplay loop controls></video> -->
+            <picture>
+              <source media='(min-width:0px)' [srcset]="cert.asset">
+              <img class="project-image" loading="lazy" mat-card-image src="" alt="Project photo">
+            </picture>
           </div>
           <div>
           </div>

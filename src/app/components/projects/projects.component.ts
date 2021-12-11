@@ -216,13 +216,83 @@ export class ProjectsComponent {
     })
   );
 
-  // slides = [
-  //   {'image': 'https://picsum.photos/seed/picsum/1200/300'},
-  //   {'image': 'https://picsum.photos/seed/picsum/1200/300'},
-  //   {'image': 'https://picsum.photos/seed/picsum/1200/300'},
-  //   {'image': 'https://picsum.photos/seed/picsum/1200/300'},
-  //   {'image': 'https://picsum.photos/seed/picsum/1200/300'}
-  // ];
+  certs = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(({ matches }) => {
+      if (matches) {
+        return [
+
+        { title: 'Infosys Certified Angular Professional',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/angular.jpg`,
+          },
+          { title: 'Infosys Global Agile Developer',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/Agile.jpg`,
+      },
+      { title: 'Infosys Certified Front End Web developer',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/FEDeveloper.jpg`,
+      },
+      { title: 'Bussiness Communication level 6',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/BCA.jpg`,
+      },
+      { title: 'Bachelor of Technology Degree',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/Degree.jpg`,
+      },
+      { title: 'Hindustan Shipyard Ltd. Internship.',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/HSL.jpg`,
+      },
+      { title: 'Oerlikon Fairfield Atlas Ltd. Intership',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/Oerlikon.jpg`,
+      },
+      { title: 'Universal Bio-Mass Energy Pvt. Ltd.Internship',
+        cols: 3, rows: 1 ,
+        asset: `/assets/certs/UBEPL.jpg`,
+      },
+      ];
+      }
+
+      return [
+
+        { title: 'Infosys Certified Angular Professional',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/angular.jpg`,
+          },
+          { title: 'Infosys Global Agile Developer',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/Agile.jpg`,
+      },
+      { title: 'Infosys Certified Front End Web developer',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/FEDeveloper.jpg`,
+      },
+      { title: 'Bussiness Communication level 6',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/BCA.jpg`,
+      },
+      { title: 'Bachelor of Technology Degree',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/Degree.jpg`,
+      },
+      { title: 'Hindustan Shipyard Ltd. Internship.',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/HSL.jpg`,
+      },
+      { title: 'Oerlikon Fairfield Atlas Ltd. Intership',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/Oerlikon.jpg`,
+      },
+      { title: 'Universal Bio-Mass Energy Pvt. Ltd.Internship',
+        cols: 1, rows: 1 ,
+        asset: `/assets/certs/UBEPL.jpg`,
+      },
+    ];
+    })
+  );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
