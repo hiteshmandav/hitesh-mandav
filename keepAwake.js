@@ -1,28 +1,29 @@
-const fetch = require('node-fetch');
+const fetch = require("node-fetch");
 
 const keepAwake = (url, interval = 25, callback) => {
-	const milliseconds = interval * 60000;
-	setTimeout(() => {
-		try {
-			console.log(`setTimeout called.`);
-			// HTTP GET request to the heroku app's url
-			fetch(url).then(() => console.log(`Fetching ${url}.`));
-		} catch (err) {
-			// catch fetch errors
-			console.log(`Error fetching ${url}: ${err.message} 
+  console.log("Keep Awake called.");
+  const milliseconds = interval * 60000;
+  setTimeout(() => {
+    try {
+      console.log(`setTimeout called.`);
+      // HTTP GET request to the heroku app's url
+      fetch(url).then(() => console.log(`Fetching ${url}.`));
+    } catch (err) {
+      // catch fetch errors
+      console.log(`Error fetching ${url}: ${err.message}
             Will try again in ${interval} minutes...`);
-		} finally {
-			try {
-				callback(); // execute callback, if passed
-			} catch (e) {
-				// catch callback error
-				callback ? console.log('Callback failed: ', e.message) : null;
-			} finally {
-				// do it all again
-				return keepAwake(url, interval, callback);
-			}
-		}
-	}, milliseconds);
+    } finally {
+      try {
+        callback(); // execute callback, if passed
+      } catch (e) {
+        // catch callback error
+        callback ? console.log("Callback failed: ", e.message) : null;
+      } finally {
+        // do it all again
+        return keepAwake(url, interval, callback);
+      }
+    }
+  }, milliseconds);
 };
 
 module.exports = keepAwake;
